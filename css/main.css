@@ -1,0 +1,222 @@
+/* 
+header(active, focus, hover)+ 'Web': #2196F3
+headings and navigation:             #212121
+main text, mail and num:             #757575
+h1, footer(map), btn:                #FFFFFF
+footer(mail, num):                   rgba(255,255,255,0.6)
+bgc of hero:                         #2F303A
+bgc of our team:                     #F5F4FA
+
+Roboto except of 'WebStudio'(Raleway)
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+:root {
+    --active-color: #2196F3;
+    --headings-nav-color: #212121;
+    --text-upcontacts-span: #757575;
+    --h1-map-btn: #fff;
+    --downcontacts:  rgba(255,255,255,0.6);
+    --bgc-our-team: #F5F4FA;
+    --simple-text-color: #000;
+    --bgc-of-hero-and-footer: #2F303A;
+}
+
+html {
+    font-family: 'Roboto', sans-serif; 
+    color: var(--headings-nav-color);
+    letter-spacing: 0.03em;
+}
+
+/* colors */
+.hero button,h1, .map {
+    color: var(--h1-map-btn);
+}
+.up-contacts, span, p {
+    color: var(--text-upcontacts-span);
+}
+.down-contacts {
+    color: var(--downcontacts);
+}
+a {
+    text-decoration: none;
+    color: var(--simple-text-color);
+}
+
+/* lists */
+ul {
+    list-style: none;
+}
+
+/* index.html */
+
+/* header */
+/* logo */
+.logo {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    color: #2196F3;
+    line-height: 1.2;
+}   
+.logo .up-logo {
+    color: #000;
+    font-size: 26px;
+}
+.logo .down-logo {
+    color: #fff;
+    font-size: 26px;
+}
+
+/* navigation */
+.nav-link { 
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* hero */
+.hero h1 {
+    width: 700px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--active-color);
+    border-radius: 4px;
+    border-style: none;
+    width: 216px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* section qualities */
+.quality {
+    line-height: 1.4;
+    text-transform: uppercase; 
+    margin-bottom: -9px;
+}
+.qualities-list p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 270px;
+}
+
+/* section our-deals */
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: center;
+}
+.our-deals-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* section our-team */
+.member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.members-list-item span {
+    font-size: 16px;
+    line-height: 1.19;
+}
+.members-list-item {
+    text-align: center;
+}
+.members-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer */
+.address-list-item-link {
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+/* portfolio.html */
+.radio-btn {
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.works-list-item h2{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.works-list-item span {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+/* index.html looking */
+main {
+    max-width: 1600px;
+}
+.wrapper {   
+    max-width: 1170px;
+    
+}
+
+.hero {
+    background-color: var(--bgc-of-hero-and-footer);
+}
+
+.hero-elements {
+    padding: 200px 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.qualities-list {
+    display: flex;
+    text-align: start;
+    margin-top: 94px;   
+    margin-bottom: 50px;
+    justify-content:  space-between;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+footer {
+    background-color: var(--bgc-of-hero-and-footer);
+    max-width: 1600px;
+}
+
+.footer-elements {
+    padding-top: 60px; 
+    padding-bottom: 60px;   
+    padding-left: 215px;
+}
