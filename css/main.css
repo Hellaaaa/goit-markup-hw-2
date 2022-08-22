@@ -12,6 +12,8 @@ font-family: 'Roboto', sans-serif;
     --bold-text: #212121;
     --completely-black: #000;
     --footer-contacts: rgba(255, 255, 255, 0.6);
+    --header-border: #ECECEC;
+    --cart-border: #EEEEEE;
 }
 
 .wrapper {
@@ -98,6 +100,7 @@ a:hover, a:focus, a:active {
 .header {
     align-items: center;
     padding-bottom: 6px;
+    border-bottom: 1px solid var(--header-border);
 }
 
 /* hero */
@@ -297,6 +300,84 @@ a:hover, a:focus, a:active {
 }
 
 /* portfolio */
+
+/* form */
+.selection-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 20px;
+}
+
+.selection-list-item input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.selection-list-item label {
+    background-color: var(--additional-bgc2);
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--bold-text);
+    cursor: pointer;
+}
+
+.selection-list-item {
+    margin-right: 8px;
+}
+
+.selection-list-item label:hover, 
+.selection-list-item label:focus, 
+.selection-list-item label:active {
+    background-color: var(--active);
+    color: var(--main-bgc);
+}
+ 
+/* list of works */
+.works {
+    margin-bottom: 94px;
+}
+
+.works-list {
+    display: flex;
+    flex-basis: 33.3%;
+    flex-wrap: wrap;
+    margin-left: 215px;
+    margin-bottom: 0;
+}
+
+.works-list-item {
+    margin-right: 30px;
+    border: 1px solid var(--cart-border);
+    margin-top: 30px;
+}
+
+.works-list-item-heading3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--bold-text);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.works-list-item-elements {
+    padding: 20px 24px;
+}
+
+.works-list-item-classification{
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--simple-text);
+}
+
+
 
 
 
